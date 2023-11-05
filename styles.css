@@ -1,11 +1,252 @@
 /* Add your CSS to this file */
 body {
-    margin: 0;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    background-color: #f8f9fa; 
 }
 
 .container {
+    width: 80%;
     margin: 0 auto;
-    max-width: 960px;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    font-size: 18px;
+}
+
+header .container{
+    display: flex;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-top: 20px;
+
+}
+
+nav ul {
+    float: right;
+    padding: 20px 0 0 500px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6b7280;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #5A67D8;
+}
+
+.overview-hero .container{
+    display: flex;
+}
+.overview-hero {
+    background-color: #E2E8F0;
+    padding: 50px ;
+    display: flex;
+}
+
+.overview-hero-image{
+    padding: 20px;
+}
+
+.overview-hero-text{
+    display: block;
+    padding: 0 0 0 70px;
+}
+
+
+.overview-hero-text h2 {
+    font-size: 36px;
+    background-color: #E2E8F0;
+    margin-bottom: 20px;
+}
+
+.learn-about{
+    padding: 15px;
+}
+
+.learn-about h2 {
+    padding: 0 30px;
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about .card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    flex-basis: calc(33.3333% - 20px);
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+.card h3 {
+    font-size: 21px;
+    color: #48BB78;
+    margin-bottom: 10px;
+}
+
+.testing {
+    background-color: #4A5568;
+    color: white;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testing-desciption {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 70%;
+}
+
+.testing-desciption h2 {
+    font-size: 36px;
+}
+
+.testing .container{
+    display: flex;
+}
+
+.cta {
+    flex: 0.5;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.cta .btn {
+    background-color: #48BB78;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta .btn:hover {
+    background-color: #2f855a;
+}
+
+.stories {
+    padding: 50px 0;
+}
+
+.stories h2{
+    color: #5A67D8;
+}
+
+.stories article {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.stories img{
+    border-radius: 100px;
+}
+
+.article-body {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.article-body h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    flex: 1;
+    margin-right: 20px;
+    max-width: 55%;
+}
+
+.article-body p {
+    margin-bottom: 10px;
+}
+
+.article-body a {
+    color: #5A67D8;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.article-body a:hover {
+    color: #3b4cca;
+}
+
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.newsletter button{
+    background-color: #5A67D8;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding: 20px 25px 0 0;
+}
+
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
     width: 100%;
 }
